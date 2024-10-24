@@ -22,11 +22,18 @@ body {
 	justify-content: space-between;
 }
 .container .wrapper a {
-	padding: 25px 6.6em;
+    padding: 25px 6.6em;
+    cursor: pointer; 
 }
-.container .wrapper .active {
-	background-color: rgb(40, 102, 131);
-	transition: background-color 0.5s ease;
+.container .wrapper a:hover {
+    background-color: rgb(44, 44, 44);
+}
+.container .wrapper a.active {
+    background-color: rgb(40, 102, 131);
+    transition: background-color 0.5s ease;
+}
+.container .wrapper a.active:hover {
+    background-color: rgb(40, 102, 131); 
 }
 .container .content {
 	background-color: white;
@@ -37,4 +44,24 @@ body {
 }
 .container .content .desc h2 {
 	margin-top: 0;
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 2em;
+	}
+	.container .wrapper a {
+		padding: 12px 25px;
+		font-size: 12px;
+	}
+	.container .content {
+		padding: 30px 1em;
+		line-height: 24px;
+	}
+	.container .content .desc h2 {
+		font-size: 16px;
+	}
+	.container .content .desc {
+		font-size: 10px;
+	}
 }
