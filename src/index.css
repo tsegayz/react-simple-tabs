@@ -1,13 +1,54 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: rgba(206, 197, 197, 0.027);
+	overflow-x: hidden;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	padding: 5em 15em;
+}
+.container .wrapper {
+	background-color: rgb(34, 34, 34);
+	display: flex;
+	justify-content: space-between;
+}
+.container .wrapper a {
+	padding: 25px 6.6em;
+}
+.container .wrapper .active {
+	background-color: rgb(40, 102, 131);
+	transition: background-color 0.5s ease;
+}
+.container .content {
+	background-color: white;
+	color: rgb(77, 77, 77);
+	padding: 60px 5em;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 34px;
+}
+.container .content .desc h2 {
+	margin-top: 0;
 }
